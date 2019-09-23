@@ -1,0 +1,57 @@
+header{
+    background-image: url("https://www.learnthreejs.com/wp-content/uploads/2017/11/three-js-background-image-720x432.jpg");
+    width: 100%;
+    height: 60px;
+    color: beige;
+    position: relative;
+    padding: 4px;   
+}
+
+header div{
+    font-size: 40px;   
+}
+
+nav{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+a{
+    color: beige;
+}
+body{
+    margin:0;
+    background-color: rgba(225, 228, 230, 0.945)
+}
+
+.moviewrap{
+    font-size:0;
+    max-width:1000px;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    object-fit: contain;
+}
+
+.moviewrap div{
+    flex: auto;
+    width: 150px;
+    margin: 20px;
+}
+
+.moviewrap div img{
+    width: 100%;
+    height: auto;
+}
+
+@media all and (max-width:700px){
+    nav{
+        display: none;
+    }
+    header div{
+        text-align: center;
+    }
+}
